@@ -1,0 +1,28 @@
+{
+  "author": "Vikram Pal",
+  "license": "ISC",
+  "name": "mlprac",
+  "version": "1.0.0",
+  "description": "MovieList CRUD Practice",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack -d --watch",
+    "start": "nodemon server/index.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.2.1",
+    "nodemon": "2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.15.0",
+    "mysql": "^2.16.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "axios": "0.20.0",
+    "lodash": "4.17.20"
+  }
+}
