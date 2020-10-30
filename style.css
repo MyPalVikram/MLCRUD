@@ -1,0 +1,28 @@
+body {
+  background-color: aquamarine;
+}
+
+.title {
+  text-align: center;
+}
+
+.searchForm {
+  text-align: center;
+}
+
+.searchBar {
+  text-align: center;
+}
+
+.searchSubmit {
+  text-align: center;
+}
+
+.listTitle {
+  text-align: center;
+}
+
+.movieEntry {
+  text-align: center;
+  padding-bottom: 10px;
+}
