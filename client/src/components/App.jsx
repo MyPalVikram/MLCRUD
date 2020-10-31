@@ -3,6 +3,8 @@ import Header from './Header.jsx';
 import Search from './Search.jsx';
 import MovieList from './MovieList.jsx';
 import movieData from './movieData.js';
+import AddMovie from './AddMovie.jsx';
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,11 +17,18 @@ class App extends React.Component {
 
     this.searchInput = this.searchInput.bind(this);
     this.searchSubmit = this.searchSubmit.bind(this);
+    this.updateMovies = this.updateMovies.bind(this);
   }
 
   componentDidMount() {
+    axios.get('/movies')
+    .then(this.updateMovies)
+    .catch((error) => {console.log(error)})
+  }
+
+  updateMovies(response) {
     this.setState({
-      movies: movieData
+      movies: response.data
     })
   }
 
@@ -49,6 +58,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
+        <AddMovie />
         <Search searchInput={this.searchInput} searchSubmit={this.searchSubmit}/>
         <MovieList movieData={this.state.movies}/>
       </div>

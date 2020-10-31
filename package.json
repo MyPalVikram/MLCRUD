@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack -d --watch",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/server.js"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

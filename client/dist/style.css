@@ -26,3 +26,15 @@ body {
   text-align: center;
   padding-bottom: 10px;
 }
+
+.addForm {
+  text-align: center;
+}
+
+.addInput {
+  text-align: center;
+}
+
+.addSubmit {
+  text-align: center;
+}
