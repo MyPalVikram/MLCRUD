@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovieEntries = (props) => (
   <div className='movieEntry'>
-    <span>{props.movie.title}</span>
+    <span>{props.movie.name}</span>
   </div>
 )
 

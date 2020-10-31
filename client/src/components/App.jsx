@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './Header.jsx';
 import Search from './Search.jsx';
 import MovieList from './MovieList.jsx';
-import movieData from './movieData.js';
 import AddMovie from './AddMovie.jsx';
 import axios from 'axios';
 
